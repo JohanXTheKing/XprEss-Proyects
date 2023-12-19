@@ -1,0 +1,51 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: litle;
+    src: url(assets/fonts/Little\ Boy.otf);
+}
+body
+{
+    background-color: rgb(16, 150, 105);
+    font-family: litle, Arial;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+}
+.header
+{
+    padding: 20px 0px 20px;
+}
+.section
+{
+    border-radius: 10px;
+    width: 50vw;
+    max-width: 500px;
+    height: 450px;
+    background:  rgb(255, 255, 255, 0.30);
+    backdrop-filter: blur(20px);
+    color: rgb(16, 150, 105);
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+section img
+{
+    border-radius: 50%;
+}
+.msg
+{
+    padding: 20px 0px 20px 0px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.footer
+{
+    font-style: italic;
+}
