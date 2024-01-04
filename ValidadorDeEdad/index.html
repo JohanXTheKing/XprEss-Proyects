@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/imgs/roboico.png" type="image/x-icon">
+    <title>Validador de edad</title>
+</head>
+<body>
+    <main class="mainContainer">
+        <div class="glassmorf">
+            <h1>Validador de edad</h1>
+        <label for="name">Cual es tu nombre?
+        </label>
+        <input type="text" name="name" id="name" class="inputText"><br>
+        <label for="edad">
+            En que año naciste?
+        </label>
+        <input type="number" id="edad" maxlength="2" class="inputText"><br>
+        <p>Cual es tu género?</p>
+        <div class="genero">
+            <label for="men">Hombre
+                <input type="radio" name="genre"" id="men">
+           </label>
+            <label for="women">Mujér
+                <input type="radio"
+            "" 
+                name="genre" id="women">
+            </label>
+        </div>
+        <button onclick="verificar()">Verificar</button>
+        <div id="res">
+
+        </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html> 
