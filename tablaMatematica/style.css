@@ -107,3 +107,21 @@ section div:nth-child(2) .img img
     display: none;
     border-bottom-right-radius: 10px;
 }
+@media screen and (max-width: 600px)
+{
+    header h1
+    {
+        position: fixed;
+        top: -100px;
+        left: 10px;
+    }
+    section div p input:nth-child(2)
+    {
+        margin-top: 20px;
+    }
+    section
+    {
+        position: relative;
+        margin-top: 100px;
+    }
+}
