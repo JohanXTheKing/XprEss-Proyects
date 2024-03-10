@@ -1,0 +1,109 @@
+*
+{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'glich';
+    src: url(font/Gatrich.otf);
+}
+@font-face {
+    font-family: 'number';
+    src: url(font/KIdDOS-Regular.otf);
+}
+body
+{
+    background: linear-gradient(25deg, #293462 25%, #1CD6CE 75%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section
+{
+    max-width: 400px;
+    width: 90vw;
+    background-color: #D61C4E;
+    color: #FEDB39;
+    border-radius: 10px;
+    padding: 0 15px ;
+}
+header h1
+{
+    font-family: 'glich' , cursive;
+    color: white;
+    margin-top: 100px;
+}
+section div p
+{
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'number', cursive;
+}
+section div p input
+{
+    width: 20%;
+    height:  30px;
+    border: none;
+    margin-left: 10px;
+}
+section div p input:nth-child(2)
+{
+    background-color: #293462;
+    border-radius: 2rem;
+    color: white;
+    font-family: 'glich' , cursive;
+    padding: 1rem 1.5rem;
+    width: auto;
+    cursor: pointer;
+    height: auto;
+    transition: all .3s ease;
+}
+section div p input:nth-child(2):hover
+{
+    background-color: white;
+    color: #D61C4E;
+}
+.bord
+{
+    border-radius: 10px;
+    overflow: hidden;
+}
+section div:nth-child(2)
+{
+    display: flex;
+}
+section div:nth-child(2) div
+{
+    width: 50%;
+}
+
+section div:nth-child(2) .img img
+{
+    max-width: 100%;
+    object-fit: cover;
+}
+.select
+{
+    padding: 5px;
+    outline: none;
+    border: none;
+    width: 100%;
+    font-family: 'number', cursive;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-bottom-left-radius: 10px;
+    overflow: visible;
+    color: #293462;
+    margin-bottom: 15px;
+    display: none;
+}
+.img img
+{
+    display: none;
+    border-bottom-right-radius: 10px;
+}
