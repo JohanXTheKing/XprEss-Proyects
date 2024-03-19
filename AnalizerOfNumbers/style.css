@@ -1,0 +1,96 @@
+*{box-sizing: border-box; margin: 0; padding: 0;}
+
+@font-face {
+    font-family: 'n';
+    src: url(assets/fonts/Creativo\ Italic.otf);
+}
+body
+{
+    background-color: #5D0E41;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h1
+{
+    color: white;
+    font-family: 'n' , sans-serif;
+    margin-bottom: 4rem;
+}
+.main
+{
+    background-color: #FF204E;
+    max-width: 400px;
+    width: 94vw;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.main label
+{
+    color: white;
+    width: 50%;
+    font-weight: bold;
+    display: inline-block;
+}
+.main input[type="number"]
+{
+    border: none;
+    padding: .3rem .5rem;
+    border-radius: 5px;
+    width: 50%;
+}
+.main .adicc
+{
+    padding: .5rem;
+    border: none;
+    cursor: pointer;
+    background-color: #5D0E41;
+    color: white;
+    font-weight: 400;
+    outline: 2px solid white;
+    font-size: 1rem;
+    border-radius: 10px;
+    position: relative;
+    top: -15px;
+    right: -20px;
+    font-family: 'n' , sans-serif;
+}
+.res
+{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    display: none;
+    text-align: center;
+    padding: .5rem;
+    font-family: 'n' , sans-serif;
+    overflow: hidden;
+    outline: none;
+}
+.result
+{
+    background-color: #5D0E41;
+    width: 50%;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: 'n' , sans-serif;
+    outline: 2px solid white;
+    cursor: pointer;
+    font-weight: 400;
+    transition: .5s ease;
+    display: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: .5rem 0;
+}
+.resultado
+{
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem 20px;
+    display: none;
+}
