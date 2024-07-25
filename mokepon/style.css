@@ -1,0 +1,211 @@
+*{box-sizing: border-box; margin: 0; padding: 0;}
+@font-face {
+    font-family: 'arcade';
+    src: url('ARCADECLASSIC.TTF');
+}
+@font-face {
+    font-family: 'subtitles';
+    src: url('Linebeam.ttf');
+}
+body
+{
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main
+{
+    background-color: #606271;
+    text-align: center;
+    color: white;
+    padding:1rem;
+    border-radius: 1.5rem;   
+}
+.main h1
+{
+    font-family: 'arcade', Arial, Helvetica;
+    font-size: 3rem;
+}
+.first_section .sectionAnimals
+{
+    display: flex;
+    justify-content: space-between;
+}
+.first_section .sectionAnimals input
+{
+    display: none;
+}
+.subtitles
+{
+    font-family: 'subtitles', Arial, Helvetica;
+    text-align: left;
+    padding: 2rem 0;
+}
+
+.sectionAnimals label
+{
+    background-color: #00002d;
+    width: 18%;
+    height: 8rem;
+    font-family: 'subtitles', Arial, Helvetica;
+    border-bottom-left-radius: 2rem;
+    cursor: pointer;
+    line-height: 10;
+    color: white;
+    font-size: 1rem;
+    transition: .5s;
+}
+.sectionAnimals label:hover
+{
+    transform: scale(110%);
+    color: transparent;
+    border-bottom-left-radius: 0;
+}
+.first_section button
+{
+    margin-top: 1rem;
+    background-color: #606271;
+    border: none;
+    padding: 1rem ;
+    border-radius: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    letter-spacing: 0;
+}
+
+.first_section button:hover,
+.first_section button:active 
+{
+    letter-spacing: 5px;
+}
+.first_section button::after,
+.first_section button::before
+{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 2px solid rgba(255, 255, 255, 0);
+    bottom: -10px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transition: all 280ms ease-in-out;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+  
+  .first_section button:hover:after,
+  .first_section button:hover:before {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-color: #00002d;
+    -webkit-transition: width 350ms ease-in-out;
+    transition: width 350ms ease-in-out;
+    width: 100%;
+  }
+  
+  .first_section button:hover:before 
+  {
+    top: -10px;
+    width: 100%;
+  }
+  .juego
+  {
+    justify-content: space-around;
+  }
+  .juego p
+  {
+    margin-top: 2rem;
+    width: 40%;
+    padding: 1.4rem 0;
+    border-radius: 1rem;
+    font-family: 'subtitles', Arial, Helvetica;
+    background-color: #00002d;
+  }
+  .subtitles
+  {
+    text-align: center;
+  }
+  #container__button button
+  {
+    border: none;
+    padding:1rem;
+    font-family: 'subtitles', Arial, Helvetica;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: relative;
+    transition:800ms ease all;
+    outline:none;
+    background-color: #00002d;
+    border-radius: .4rem;
+    color: #fff;
+    margin: 0 .8rem;
+  }
+  #container__button button:hover{
+    background-color: #fff;
+    color:#00002d;
+  }
+  #container__button button:before,
+  #container__button button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #00002d;
+    transition:400ms ease all;
+  }
+  #container__button button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  #container__button button:hover:before,
+  #container__button button:hover:after{
+    width: 100%;
+    margin: 0 auto;
+    transition:800ms ease all;
+  }
+  .mensajesFlex
+  {
+    justify-content: space-between;
+  }
+  .mensajesFlex p
+  {
+    background-color: #00002d;
+    font-family: 'subtitles', Arial, Helvetica;
+    margin-top: 3rem;
+    padding: 1rem;
+    width: 45%;
+    border-radius: .4rem;
+  }
+  #mensajeGanador
+  {
+    margin: 2.5rem 0;
+  }
+  #bottom__Reiniciar
+  {
+    padding: 1rem;
+    width: 20%;
+    border-radius: 1rem;
+    border: none;
+    transition: all .5s ease;
+    cursor: pointer;
+  }
+  #bottom__Reiniciar:hover
+  {
+    background-color: #606271;
+    color: rgb(255, 255, 255);
+    font-family: 'subtitles', Arial, Helvetica;
+    font-size: 1.4rem;
+  }
+  #vidasMymascot, #vidasAlmascot
+  {
+    font-weight: bold;
+  }

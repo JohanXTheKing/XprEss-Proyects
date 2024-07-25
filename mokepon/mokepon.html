@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="movil.css" media="screen and (max-width: 450px)">
+        <title>MOKEPON!</title>
+    </head>
+    <body>
+        <main class="main">
+            <h1>🥷👑Tablero Aleatorio!👑🥷</h1>
+            <section id="seleccionar_mascota" class="first_section">
+                <h2 class="subtitles">Elige una mascota!:</h2>
+                <div class="sectionAnimals">
+                    <label for="hipodoge">Hipodoge
+                        <input type="radio" id="hipodoge" name="mascota" />
+                    </label>
+                    <label for="dylansio">Dylansio
+                        <input type="radio" id="dylansio" name="mascota" />
+                    </label>
+                    <label for="monedita">Monedita
+                        <input type="radio" id="monedita" name="mascota" />
+                    </label>
+                    <label for="michelony">Michelony
+                        <input type="radio" id="michelony" name="mascota" />
+                    </label>
+                    <label for="gabivi">Gabivi
+                        <input type="radio" id="gabivi" name="mascota" />
+                    </label>
+                </div>
+                <button id="bottom__SelecMasc">JUGAR!</button>
+            </section>
+            <div id="juego" class="juego">
+                <p><span id="nombre_mascota"></span> tiene <span id="vidasMymascot">3</span> vidas</p>
+                <p><span id="nombreMascota_enemigo"></span> tiene <span id="vidasAlmascot">3</span> vidas</p>
+            </div>
+            <section id="selccionar__ataque">
+                <h2 class="subtitles">Elige tu ataque:</h2>
+                <p id="container__button">
+                    <button id="bottom__SelecAtac__Fire">🔥🔥🔥</button>
+                    <button id="bottom__SelecAtac__Water">💧💧💧</button>
+                    <button id="bottom__SelecAtac__Earth">🌱🌱🌱</button>
+                </p>
+            </section>
+            <section id="mensajes" class="mensajes">
+                <div class="mensajesFlex" id="mensajesFlex">
+                    <p id="atack"></p>
+                    <p id="ataqueEnemigo"></p>
+                </div>
+                <p id="mensajeGanador"></p>
+            </section>
+            <section id="reiniciar">
+                <button id="bottom__Reiniciar">Reset</button>
+            </section>
+        </main>
+        <script src="scr7i.js"></script>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+body
+{
+    background-repeat: no-repeat;
+    min-height: 280vh;
+    flex-direction: column;
+    justify-content: center;
+}
+.main
+{
+    width: 90%;
+    padding: 2rem;
+}
+.main .first_section .sectionAnimals
+{
+    display: flex;
+    flex-direction: column;
+}
+.main .first_section .sectionAnimals label
+{
+    width: 85%;
+    margin: 1.5rem auto;
+    height: 15rem;
+    font-size: 2rem;
+}
+.first_section button
+{
+    font-size: 2.5rem;
+}
+.juego p
+{
+    margin: 4rem 0 3.5rem ;
+    font-size: 2rem;
+}
+#container__button button
+{
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.mensajesFlex p
+{
+    font-size: 2rem;
+    line-height: 150%;
+}
+#mensajeGanador, #bottom__Reiniciar
+{
+    font-size: 2rem;
+}
+#bottom__Reiniciar:hover
+{
+    font-size: 2.5rem;
+}
